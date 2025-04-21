@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Perfil</title>
+  <style>
+    body {
+      background-color: #e3f2fd; /* Fundo suave */
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0 20px 20px 20px;
+    }
+    h1 {
+      color: #1565c0; /* Cor diferente */
+      text-align: center;
+      margin-top: 40px;
+    }
+    p {
+      font-size: 1.3em;
+      text-align: justify;
+      max-width: 600px;
+      margin: 20px auto 20px auto;
+    }
+    button {
+      display: block;
+      margin: 10px auto 0 auto;
+      padding: 8px 16px;
+      font-size: 1em;
+      background-color: #1565c0;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #1976d2;
+    }
+    #mensagem {
+      text-align: center;
+      color: #388e3c;
+      font-weight: bold;
+      margin-top: 16px;
+      min-height: 22px;
+    }
+    ul {
+      max-width: 600px;
+      margin: 30px auto 30px auto;
+      padding-left: 40px;
+    }
+    ul li {
+      margin-bottom: 16px; /* Espaçamento maior */
+      font-size: 1.1em;
+    }
+    img.hobbie {
+      display: block;
+      margin: 0 auto 24px auto;
+      border-radius: 18px; /* Bordas arredondadas */
+      width: 260px;
+      height: auto;
+      box-shadow: 0 2px 15px rgba(21,101,192,0.10);
+    }
+    table {
+      margin: 0 auto 35px auto;
+      border-collapse: collapse;
+      background-color: #fafafa;
+      box-shadow: 0 2px 8px #bbb8;
+    }
+    th, td {
+      border: 1px solid #bdbdbd;
+      padding: 12px 26px;
+      text-align: center;
+      font-size: 1em;
+    }
+    th {
+      background-color: #b3e5fc;
+      color: #1565c0;
+      font-weight: bold;
+    }
+    td img {
+      width: 60px;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px #bbb5;
+    }
+    a {
+      color: #1976d2;
+      text-decoration: none;
+      transition: color 0.3s;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #d81b60;
+    }
+    .section {
+      max-width: 700px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1>Emerson Ap. Conquista</h1>
+
+    <p>
+      Olá! Meu nome é Emerson Conquista, tenho 54 anos, moro em São Carlos, SP e sou apaixonado por tecnologia, música e desenvolvimento web. 
+      Gosto de aprender coisas novas, tocar instrumentos musicais e criar projetos úteis para a internet.
+    </p>
+    
+    <button id="meuBotao">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+    
+    <ul>
+      <li>Tocar piano</li>
+      <li>Violino</li>
+      <li>Desenvolvimento de sites</li>
+    </ul>
+
+    <img class="hobbie" src="https://images.pexels.com/photos/10222195/pexels-photo-10222195.jpeg" alt="Pessoa tocando piano">
+    
+    <table>
+      <tr>
+        <th>País</th>
+        <th>Imagem</th>
+      </tr>
+      <tr>
+        <td>Japão</td>
+        <td><img src="https://flagcdn.com/w80/jp.png" alt="Bandeira do Japão"></td>
+      </tr>
+      <tr>
+        <td>França</td>
+        <td><img src="https://flagcdn.com/w80/fr.png" alt="Bandeira da França"></td>
+      </tr>
+      <tr>
+        <td>Canadá</td>
+        <td><img src="https://flagcdn.com/w80/ca.png" alt="Bandeira do Canadá"></td>
+      </tr>
+    </table>
+    
+    <a href="https://www.canaltech.com.br/">Visite o Canaltech para notícias de tecnologia!</a>
+  </div>
+  <script>
+    const botao = document.getElementById("meuBotao");
+    const mensagem = document.getElementById("mensagem");
+    botao.onclick = function() {
+      mensagem.innerHTML = "Nunca pare de estudar e se reinventar! 🚀";
+    }
+  </script>
+</body>
+</html>
